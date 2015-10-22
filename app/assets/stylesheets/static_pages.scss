@@ -1,29 +1,11 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
 body {
   font-family: helvetica;
-}
-
-#background {
-  position: relative;
-  height: 768px;
-  width: 1024px;
-  background-image: image-url("donut.png");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
-#content {
-  position: absolute;
-  text-align: center;
-  margin: -100px 0 0 -150px;
-  width: 400px;
-  height: 200px;
-  left: 50%;
-  top: 50%;
 }
 
 a {
