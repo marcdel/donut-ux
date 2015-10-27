@@ -2,10 +2,12 @@
   <div class="splash">
     <%= image_tag("donut_logo.png")  %>
     <h1>Donut UX Coming Soon!</h1>
-    <%= mail_to "jaqtann@gmail.com", cc: "aliciajolivares@gmail.com" do %>
-      Contact Us
-    <% end %>
-    <br/>
-    <%= mail_to "jaqtann@gmail.com" %> | <%= mail_to "aliciajolivares@gmail.com" %>
+    <p>
+      <%= mail_to "jaqtann@gmail.com", cc: "aliciajolivares@gmail.com" do %>
+        Contact Us
+      <% end %>
+      <br/>
+      <%= mail_to "jaqtann@gmail.com" %> | <%= mail_to "aliciajolivares@gmail.com" %>
+    </p>
   </div>
 </div>
