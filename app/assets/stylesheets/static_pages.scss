@@ -37,3 +37,14 @@ a:hover, a:visited {
   background-color: #F81986;
   border-color: #F81986;
 }
+
+.donut {
+  height: 300px;
+}
+
+.vertical-center {
+  height: 400px;
+
+  display: flex;
+  align-items: center;
+}
