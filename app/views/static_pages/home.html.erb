@@ -1,16 +1,12 @@
 <div class="container">
   <div class="splash">
     <h1>Donut UX: A Full Circle UX Agency</h1>
-    <div class="vertical-center donut">
-      <p class="col-md-1">
-          <%= mail_to "jaqtann@gmail.com", cc: "aliciajolivares@gmail.com" do %>
-            <button class="btn btn-lg btn-info">Contact Us</button>
-          <% end %>
-      </p>
-      <p class="col-md-10">
-        <%= image_tag("donut_logo.png")  %>
-      </p>
-    </div>
+    <%= image_tag("donut_logo.png")  %>
     <h2>Coming Soon!</h2>
+    <p>
+      <%= mail_to "jaqtann@gmail.com", cc: "aliciajolivares@gmail.com" do %>
+        <button class="btn btn-lg btn-info">Contact Us</button>
+      <% end %>
+    </p>
   </div>
 </div>
