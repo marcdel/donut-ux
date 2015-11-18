@@ -1,6 +1,53 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.splash {
+  margin-top: 5%;
+  text-align: center;
+  height: 500px;
+}
+
 h1 {
   text-transform: capitalize;
+}
+
+.donut {
+  width: 50%;
+  height: 50%;
+}
+
+#what-we-do div img {
+  height: 100%;
+  width: 100%;
+}
+
+#what-we-do div {
+  text-align: center;
+  height: 300px;
+}
+
+#how-we-do-it div {
+  text-align: center;
+  height: 300px;
+  background-color: #f7f7f9;
+}
+
+#who-we-are-jackie div {
+  text-align: center;
+  height: 300px;
+}
+
+#who-we-are-jackie div img {
+  height: 100%;
+  width: 100%;
+}
+
+#who-we-are-alicia div {
+  text-align: center;
+  height: 300px;
+}
+
+#who-we-are-alicia div img {
+  height: 100%;
+  width: 100%;
 }
