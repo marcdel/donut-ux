@@ -4,7 +4,6 @@
 .splash {
   margin-top: 5%;
   text-align: center;
-  height: 500px;
 }
 
 h1 {
@@ -12,8 +11,8 @@ h1 {
 }
 
 .donut {
-  width: 50%;
-  height: 50%;
+  width: 50% !important;
+  height: 75% !important;
 }
 
 #what-we-do div img {
@@ -23,18 +22,15 @@ h1 {
 
 #what-we-do div {
   text-align: center;
-  height: 300px;
 }
 
 #how-we-do-it div {
   text-align: center;
-  height: 300px;
   background-color: #f7f7f9;
 }
 
 #who-we-are-jackie div {
   text-align: center;
-  height: 300px;
 }
 
 #who-we-are-jackie div img {
@@ -44,7 +40,6 @@ h1 {
 
 #who-we-are-alicia div {
   text-align: center;
-  height: 300px;
 }
 
 #who-we-are-alicia div img {
