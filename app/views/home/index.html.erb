@@ -1,79 +1,65 @@
 <div class="container" ng-app="donutUx">
-  <div class="splash" ng-controller="MainController">
-    <h1>{{title}}</h1>
-    <%= image_tag("donut_logo_1024.png", :class => "donut")  %>
-  </div>
-  <div id="what-we-do" class="row">
-    <div class="col-md-4">
-      <%= image_tag("donut_logo_1024.png")  %>
+  <div ng-controller="MainController">
+    <div class="splash">
+      <h1>{{title}}</h1>
+      <%= image_tag("donut_logo_1024.png", :class => "donut")  %>
     </div>
-    <div class="col-md-4">
-      <h3> Section 1</h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet eleifend eros. Sed fermentum et eros non cursus. Proin tempor lobortis nisl, vel consequat turpis sagittis at. Ut blandit molestie lobortis. Curabitur magna arcu, condimentum finibus velit non, commodo semper elit. Donec ut consectetur velit. Proin sagittis odio maximus, interdum orci sed, imperdiet urna. Vivamus quis ex a ante rutrum scelerisque. Phasellus varius dolor non posuere egestas. Nunc condimentum bibendum tempus. Integer posuere sed risus non gravida.
-      </p>
+
+    <div class="row what-we-do first">
+      <div class="col-md-4"> </div>
+      <div class="col-md-4">
+        <h3> Section 1</h3>
+        <p> {{lipsum}} </p>
+      </div>
+      <div class="col-md-4"> </div>
     </div>
-    <div class="col-md-4">
-      <%= image_tag("donut_logo_1024.png")  %>
+
+    <div class="row what-we-do second">
+      <div class="col-md-4">
+        <h3> Section 1</h3>
+        <p> {{lipsum}} </p>
+      </div>
+      <div class="col-md-4"> </div>
+      <div class="col-md-4">
+        <h3> Section 2</h3>
+        <p> {{lipsum}} </p>
+      </div>
     </div>
-  </div>
-  <div id="what-we-do" class="row">
-    <div class="col-md-4">
-      <h3> Section 1</h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet eleifend eros. Sed fermentum et eros non cursus. Proin tempor lobortis nisl, vel consequat turpis sagittis at. Ut blandit molestie lobortis. Curabitur magna arcu, condimentum finibus velit non, commodo semper elit. Donec ut consectetur velit. Proin sagittis odio maximus, interdum orci sed, imperdiet urna. Vivamus quis ex a ante rutrum scelerisque. Phasellus varius dolor non posuere egestas. Nunc condimentum bibendum tempus. Integer posuere sed risus non gravida.
-      </p>
+
+    <div class="row how-we-do-it">
+      <div class="col-md-4">
+        <h3> Section 1</h3>
+        <p>
+        {{lipsum}}
+        </p>
+      </div>
+      <div class="col-md-4">
+        <h3> Section 2</h3>
+        <p>
+        {{lipsum}}
+        </p>
+      </div>
+      <div class="col-md-4">
+        <h3> Section 3</h3>
+        <p> {{lipsum}} </p>
+      </div>
     </div>
-    <div class="col-md-4">
-      <%= image_tag("donut_logo_1024.png")  %>
+
+    <div class="row who-we-are first">
+      <div class="col-md-6">
+        <h3>Jackie</h3>
+        <p> {{lipsum}} </p>
+      </div>
+      <div class="col-md-6"> </div>
     </div>
-    <div class="col-md-4">
-      <h3> Section 2</h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet eleifend eros. Sed fermentum et eros non cursus. Proin tempor lobortis nisl, vel consequat turpis sagittis at. Ut blandit molestie lobortis. Curabitur magna arcu, condimentum finibus velit non, commodo semper elit. Donec ut consectetur velit. Proin sagittis odio maximus, interdum orci sed, imperdiet urna. Vivamus quis ex a ante rutrum scelerisque. Phasellus varius dolor non posuere egestas. Nunc condimentum bibendum tempus. Integer posuere sed risus non gravida.
-      </p>
+
+    <div class="row who-we-are second">
+      <div class="col-md-6"> </div>
+      <div class="col-md-6">
+        <h3>Alicia</h3>
+        <p> {{lipsum}} </p>
+      </div>
     </div>
-  </div>
-  <div id="how-we-do-it" class="row">
-    <div class="col-md-4">
-      <h3> Section 1</h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet eleifend eros. Sed fermentum et eros non cursus. Proin tempor lobortis nisl, vel consequat turpis sagittis at. Ut blandit molestie lobortis. Curabitur magna arcu, condimentum finibus velit non, commodo semper elit. Donec ut consectetur velit. Proin sagittis odio maximus, interdum orci sed, imperdiet urna. Vivamus quis ex a ante rutrum scelerisque. Phasellus varius dolor non posuere egestas. Nunc condimentum bibendum tempus. Integer posuere sed risus non gravida.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h3> Section 2</h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet eleifend eros. Sed fermentum et eros non cursus. Proin tempor lobortis nisl, vel consequat turpis sagittis at. Ut blandit molestie lobortis. Curabitur magna arcu, condimentum finibus velit non, commodo semper elit. Donec ut consectetur velit. Proin sagittis odio maximus, interdum orci sed, imperdiet urna. Vivamus quis ex a ante rutrum scelerisque. Phasellus varius dolor non posuere egestas. Nunc condimentum bibendum tempus. Integer posuere sed risus non gravida.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h3> Section 3</h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet eleifend eros. Sed fermentum et eros non cursus. Proin tempor lobortis nisl, vel consequat turpis sagittis at. Ut blandit molestie lobortis. Curabitur magna arcu, condimentum finibus velit non, commodo semper elit. Donec ut consectetur velit. Proin sagittis odio maximus, interdum orci sed, imperdiet urna. Vivamus quis ex a ante rutrum scelerisque. Phasellus varius dolor non posuere egestas. Nunc condimentum bibendum tempus. Integer posuere sed risus non gravida.
-      </p>
-    </div>
-  </div>
-  <div id="who-we-are-jackie" class="row">
-    <div class="col-md-6">
-      <h3>Jackie</h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet eleifend eros. Sed fermentum et eros non cursus. Proin tempor lobortis nisl, vel consequat turpis sagittis at. Ut blandit molestie lobortis. Curabitur magna arcu, condimentum finibus velit non, commodo semper elit. Donec ut consectetur velit. Proin sagittis odio maximus, interdum orci sed, imperdiet urna. Vivamus quis ex a ante rutrum scelerisque. Phasellus varius dolor non posuere egestas. Nunc condimentum bibendum tempus. Integer posuere sed risus non gravida.
-      </p>
-    </div>
-    <div class="col-md-6">
-      <%= image_tag("donut_logo_1024.png")  %>
-    </div>
-  </div>
-  <div id="who-we-are-alicia" class="row">
-    <div class="col-md-6">
-      <%= image_tag("donut_logo_1024.png")  %>
-    </div>
-    <div class="col-md-6">
-      <h3>Alicia</h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet eleifend eros. Sed fermentum et eros non cursus. Proin tempor lobortis nisl, vel consequat turpis sagittis at. Ut blandit molestie lobortis. Curabitur magna arcu, condimentum finibus velit non, commodo semper elit. Donec ut consectetur velit. Proin sagittis odio maximus, interdum orci sed, imperdiet urna. Vivamus quis ex a ante rutrum scelerisque. Phasellus varius dolor non posuere egestas. Nunc condimentum bibendum tempus. Integer posuere sed risus non gravida.
-      </p>
-    </div>
+
   </div>
 </div>
