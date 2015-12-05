@@ -1,3 +1,13 @@
+GIT
+  remote: git://github.com/pivotal/jasmine-gem.git
+  revision: 17dc9dcebe5c2d4483d4274257e8a00e742bed4b
+  specs:
+    jasmine (2.4.0)
+      jasmine-core (~> 2.4)
+      phantomjs
+      rack (>= 1.2.1)
+      rake
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -36,6 +46,7 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
+    angularjs-rails (1.4.7)
     arel (6.0.3)
     autoprefixer-rails (6.0.3)
       execjs
@@ -60,6 +71,7 @@ GEM
     globalid (0.3.6)
       activesupport (>= 4.1.0)
     i18n (0.7.0)
+    jasmine-core (2.4.1)
     jbuilder (2.3.2)
       activesupport (>= 3.0.0, < 5)
       multi_json (~> 1.2)
@@ -79,6 +91,7 @@ GEM
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
     pg (0.18.3)
+    phantomjs (1.9.8.0)
     rack (1.6.4)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -148,9 +161,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  angularjs-rails
   bootstrap-sass
   byebug
   coffee-rails (~> 4.1.0)
+  jasmine!
   jbuilder (~> 2.0)
   jquery-rails
   pg
