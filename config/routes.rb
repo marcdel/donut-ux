@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'messages/new'
+
   get 'home/index'
 
   root 'static_pages#home'
