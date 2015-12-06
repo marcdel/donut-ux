@@ -6,13 +6,18 @@
 
 * Configuration
 
-* Database creation: rake db:create
+* Database creation:
+  * `rake db:create`
 
-* Database initialization: rake db:migrate
+* Database initialization:
+  * `rake db:migrate`
 
-* How to run the test suite: rake spec, rake jasmine
+* How to run the test suite:
+  * `rake spec`
+  * `rake jasmine`
 
-* Deployment instructions: git push heroku master, git push staging master
-  > heroku  https://git.heroku.com/donut-ux.git
-  > origin  git@github.com:marcdel/donut-ux.git
-  > staging https://git.heroku.com/staging-donut-ux.git
+* Deployment instructions:
+  * `git push heroku master`
+  * `git push staging master`
+  * production: https://git.heroku.com/donut-ux.git
+  * staging: https://git.heroku.com/staging-donut-ux.git
