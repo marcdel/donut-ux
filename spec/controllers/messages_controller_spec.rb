@@ -9,4 +9,18 @@ RSpec.describe MessagesController, type: :controller do
     end
   end
 
+  describe "POST #create" do
+    it "posts a valid message successfully" do
+      post :create, message: {
+        name: 'marc',
+        email: 'marc@email.com',
+        subject: 'hello',
+        content: 'content'
+      }
+
+      expect(response).to redirect_to(new_message_path)
+    end
+
+  end
+
 end
