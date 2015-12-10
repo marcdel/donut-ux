@@ -4,9 +4,7 @@
     <%= image_tag("donut_logo_1024.png", :class => "donut")  %>
     <h2>Coming Soon!</h2>
     <p>
-      <%= mail_to "jaqtann@gmail.com", cc: "aliciajolivares@gmail.com" do %>
-        <button class="btn btn-lg btn-info">Contact Us</button>
-      <% end %>
+      <%= button_to "Contact Us", new_message_path, :class => "btn btn-lg btn-info", :method => :get  %>
     </p>
   </div>
 </div>
