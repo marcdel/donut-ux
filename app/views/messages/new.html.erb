@@ -1,5 +1,8 @@
 <div class="container contact-container">
   <%= form_for @message do |f| %>
+    <% flash.each do |key, value| %>
+      <div class="alert <%= bootstrap_class_for(key) %> fade in"><%= value %></div>
+    <% end %>
 
     <% if @message.errors.any? %>
       <div id="error_explanation">

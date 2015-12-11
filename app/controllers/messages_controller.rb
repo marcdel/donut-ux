@@ -8,7 +8,7 @@ class MessagesController < ApplicationController
 
     if @message.valid?
       MessageMailer.send_message(@message).deliver_now
-      redirect_to new_message_path, notice: "Thanks for getting in touch! Someone will get back to you soon."
+      redirect_to new_message_path, notice: "Sent! We'll get back to you soon!"
     else
       render :new
     end
