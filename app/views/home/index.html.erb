@@ -1,63 +1,51 @@
 <div class="container donut-container" ng-app="donutUx">
   <div ng-controller="MainController">
-    <div class="splash donut-span">
-      <h1>{{title}}</h1>
-      <%= image_tag("donut_logo_1024.png", :class => "donut")  %>
-    </div>
+    <div id="fullpage">
+      <div class="section">
+        <h1>{{title}}</h1>
+        <%= image_tag("donut_logo_1024.png", :class => "donut")  %>
+      </div>
 
-    <div class="row what-we-do first">
-      <div class="col-md-4"> </div>
-      <div class="col-md-4">
-        <h3> Section 1</h3>
-        <p> {{lipsum}} </p>
-      </div>
-      <div class="col-md-4"> </div>
-    </div>
+      <div class="section">
+        <div class="row what-we-do first">
+          <div class="col-md-4"> </div>
+          <div class="col-md-4">
+            <h3> Section 1</h3>
+            <p> {{lipsum}} </p>
+          </div>
+          <div class="col-md-4"> </div>
+        </div>
 
-    <div class="row what-we-do second">
-      <div class="col-md-4">
-        <h3> Section 1</h3>
-        <p> {{lipsum}} </p>
+        <div class="row what-we-do second">
+          <div class="col-md-4">
+            <h3> Section 1</h3>
+            <p> {{lipsum}} </p>
+          </div>
+          <div class="col-md-4"> </div>
+          <div class="col-md-4">
+            <h3> Section 2</h3>
+            <p> {{lipsum}} </p>
+          </div>
+        </div>
       </div>
-      <div class="col-md-4"> </div>
-      <div class="col-md-4">
-        <h3> Section 2</h3>
-        <p> {{lipsum}} </p>
-      </div>
-    </div>
 
-    <div class="row how-we-do-it">
-      <div class="col-md-4">
-        <h3> Section 1</h3>
-        <p>
-        {{lipsum}}
-        </p>
-      </div>
-      <div class="col-md-4">
-        <h3> Section 2</h3>
-        <p>
-        {{lipsum}}
-        </p>
-      </div>
-      <div class="col-md-4">
-        <h3> Section 3</h3>
-        <p> {{lipsum}} </p>
+    <div class="section">
+      <div class="row who-we-are first">
+        <div class="col-md-6">
+          <h3>Jackie</h3>
+          <p> {{lipsum}} </p>
+        </div>
+        <div class="col-md-6"> </div>
       </div>
     </div>
 
-    <div class="row who-we-are first">
-      <div class="col-md-6">
-        <h3>Jackie</h3>
-        <p> {{lipsum}} </p>
-      </div>
-      <div class="col-md-6"> </div>
-    </div>
-
-    <div class="row who-we-are second">
-      <div class="col-md-6"> </div>
-      <div class="col-md-6">
-        <h3>Alicia</h3>
-        <p> {{lipsum}} </p>
+    <div class="section">
+      <div class="row who-we-are second">
+        <div class="col-md-6"> </div>
+        <div class="col-md-6">
+          <h3>Alicia</h3>
+          <p> {{lipsum}} </p>
+        </div>
       </div>
     </div>
 
