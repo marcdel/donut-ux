@@ -5,7 +5,11 @@ ready = ->
   $('#fullpage').fullpage({
     menu: '.navbar-fixed-top',
     anchors:['home', 'sectionOne', 'sectionTwo', 'sectionThree'],
-    sectionsColor: ['#DDEDF4', '#ADCFDD', '#50859C', '#326B83']
+    sectionsColor: ['#DDEDF4', '#ADCFDD', '#50859C', '#326B83'],
+    afterLoad: (anchorLink, index) ->
+      loadedSection = $(this)
+
+      $(".navbar-fixed-top").toggle(anchorLink != 'home')
   })
 
 $(document).ready(ready)
