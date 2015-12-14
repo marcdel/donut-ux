@@ -1,5 +1,18 @@
 <div class="container donut-container" ng-app="donutUx">
   <div ng-controller="MainController">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#home">Donut UX</a></li>
+            <li><a href="#sectionOne">SectionOne</a></li>
+            <li><a href="#sectionTwo">SectionTwo</a></li>
+            <li><a href="#sectionThree">SectionThree</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
     <div id="fullpage">
       <div class="section">
         <h1>{{title}}</h1>
@@ -7,47 +20,15 @@
       </div>
 
       <div class="section">
-        <div class="row what-we-do first">
-          <div class="col-md-4"> </div>
-          <div class="col-md-4">
-            <h3> Section 1</h3>
-            <p> {{lipsum}} </p>
-          </div>
-          <div class="col-md-4"> </div>
-        </div>
-
-        <div class="row what-we-do second">
-          <div class="col-md-4">
-            <h3> Section 1</h3>
-            <p> {{lipsum}} </p>
-          </div>
-          <div class="col-md-4"> </div>
-          <div class="col-md-4">
-            <h3> Section 2</h3>
-            <p> {{lipsum}} </p>
-          </div>
-        </div>
+        <p>Section 1</p>
       </div>
 
-    <div class="section">
-      <div class="row who-we-are first">
-        <div class="col-md-6">
-          <h3>Jackie</h3>
-          <p> {{lipsum}} </p>
-        </div>
-        <div class="col-md-6"> </div>
+      <div class="section">
+        <p>Section 2</p>
       </div>
-    </div>
 
-    <div class="section">
-      <div class="row who-we-are second">
-        <div class="col-md-6"> </div>
-        <div class="col-md-6">
-          <h3>Alicia</h3>
-          <p> {{lipsum}} </p>
-        </div>
+      <div class="section">
+        <p>Section 3</p>
       </div>
-    </div>
-
   </div>
 </div>

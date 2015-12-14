@@ -2,7 +2,11 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 ready = ->
-  $('#fullpage').fullpage()
+  $('#fullpage').fullpage({
+    menu: '.navbar-fixed-top',
+    anchors:['home', 'sectionOne', 'sectionTwo', 'sectionThree'],
+    sectionsColor: ['#DDEDF4', '#ADCFDD', '#50859C', '#326B83']
+  })
 
 $(document).ready(ready)
 $(document).on('page:load', ready)
