@@ -2,32 +2,35 @@
   <div ng-controller="MainController">
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#home">Donut UX</a>
+        </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#home">Donut UX</a></li>
-            <li><a href="#sectionOne">SectionOne</a></li>
-            <li><a href="#sectionTwo">SectionTwo</a></li>
-            <li><a href="#sectionThree">SectionThree</a></li>
+            <li data-menuanchor="home"><a href="#home">Donut UX</a></li>
+            <li data-menuanchor="sectionOne"><a href="#sectionOne">SectionOne</a></li>
+            <li data-menuanchor="sectionTwo"><a href="#sectionTwo">SectionTwo</a></li>
+            <li data-menuanchor="sectionThree"><a href="#sectionThree">SectionThree</a></li>
           </ul>
         </div>
       </div>
     </nav>
 
     <div id="fullpage">
-      <div class="section">
+      <div class="section" data-anchor="home">
         <h1>{{title}}</h1>
         <%= image_tag("donut_logo_1024.png", :class => "donut")  %>
       </div>
 
-      <div class="section">
+      <div class="section" data-anchor="sectionOne">
         <p>Section 1</p>
       </div>
 
-      <div class="section">
+      <div class="section" data-anchor="sectionTwo">
         <p>Section 2</p>
       </div>
 
-      <div class="section">
+      <div class="section" data-anchor="sectionThree">
         <p>Section 3</p>
       </div>
   </div>
