@@ -9,7 +9,10 @@ ready = ->
     afterLoad: (anchorLink, index) ->
       loadedSection = $(this)
 
-      $(".navbar-fixed-top").toggle(anchorLink != 'home')
+      if(anchorLink == 'home')
+        $(".navbar-fixed-top").fadeOut()
+      else
+        $(".navbar-fixed-top").fadeIn()
   })
 
 $(document).ready(ready)
