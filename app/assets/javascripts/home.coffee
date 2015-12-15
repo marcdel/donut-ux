@@ -4,7 +4,7 @@
 ready = ->
   $('#fullpage').fullpage({
     menu: '.navbar-fixed-top',
-    anchors:['home', 'sectionOne', 'sectionTwo', 'sectionThree'],
+    anchors:['home', 'sectionOne', 'sectionTwo', 'contact'],
     sectionsColor: ['#DDEDF4', '#ADCFDD', '#50859C', '#326B83'],
     afterLoad: (anchorLink, index) ->
       loadedSection = $(this)
