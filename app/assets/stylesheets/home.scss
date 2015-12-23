@@ -11,22 +11,14 @@
   padding: 0;
 }
 
-.splash.donut-span {
-  margin-top: 0 !important;
-  text-align: center;
-}
-
 h1 {
   text-transform: capitalize;
 }
 
-.donut {
-  width: 50% !important;
-  height: 75% !important;
-}
-
 .logo-link-container {
-  position:absolute;
+  height:80%;
+  background: url("donut_logo_1024.png") no-repeat center;
+  background-size: contain;
 }
 
 .logo-link {

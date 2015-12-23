@@ -5,14 +5,14 @@ ready = ->
   $('#fullpage').fullpage({
     menu: '.navbar-fixed-top',
     anchors:['home', 'sectionOne', 'sectionTwo', 'contact'],
-    sectionsColor: ['#DDEDF4', '#ADCFDD', '#50859C', '#326B83'],
+    sectionsColor: ['#DDEDF4', '#ADCFDD', '#50859C', 'white'],
     afterLoad: (anchorLink, index) ->
       loadedSection = $(this)
 
       if(anchorLink == 'home')
-        $(".navbar-fixed-top").fadeOut()
+        $(".navbar-fixed-top").fadeOut('fast')
       else
-        $(".navbar-fixed-top").fadeIn()
+        $(".navbar-fixed-top").fadeIn(100)
   })
 
 $(document).ready(ready)
